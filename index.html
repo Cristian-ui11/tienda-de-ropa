@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="Cristian Icon" type="jpg"
+    href="imagenes/logo.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Luxe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <h1>Cristian Luxe</h1> 
+    </header>
+    <header>
+        <div class="image-container">
+             <img src="imagenes/logo.jpg" alt="">
+        </div>
+    </header>
+    <header>
+        <li><a href="inicio de sesion.html" class="button">Iniciar sesion</a></li>
+    </header>
+    <main>
+        <section class="products">
+            <div class="image-container">
+                <img src="imagenes/imagen1.jpg" alt="Camiseta" />
+                <h2>Camiseta de Marca</h2>
+                <p>Precio: $25.00</p>
+                <button class="add-to-cart" data-name="Camiseta de Marca" data-price="25">Añadir al carrito</button>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/imagen2.jpg" alt="Pantalones" />
+                <h2>Pantalones de Marca</h2>
+                <p>Precio: $40.00</p>
+                <button class="add-to-cart" data-name="Pantalones de Marca" data-price="40">Añadir al carrito</button>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/imagen3.jpg" alt="Chaqueta" />
+                <h2>Chaqueta de Marca</h2>
+                <p>Precio: $60.00</p>
+                <button class="add-to-cart" data-name="Chaqueta de Marca" data-price="60">Añadir al carrito</button>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/imagen4.jpg" alt="Gafas" />
+                <h2>Gafas de Marca</h2>
+                <p>Precio: $10.00</p>
+                <button class="add-to-cart" data-name="Gafas de Marca" data-price="10">Añadir al carrito</button>
+            </div>
+            <div class="image-container">
+            <img src="imagenes/imagen5.jpg" alt="Zapatos" />
+            <h2>Zapatos de Marca</h2>
+            <p>Precio: $110.00</p>
+            <button class="add-to-cart" data-name="Zapatos de Marca" data-price="110">Añadir al carrito</button>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/imagen6.jpg" alt="pulseras" />
+                <h2>Pulseras de flores</h2>
+                <p>Precio: $30.00</p>
+                <button class="add-to-cart" data-name="Pulseras de Marca" data-price="30">Añadir al carrito</button>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/imagen7.jpg" alt="Gorras" />
+                <h2>Gorras de Marca</h2>
+                <p>Precio: $25.00</p>
+                <button class="add-to-cart" data-name="Gorras de Marca" data-price="25">Añadir al carrito</button>
+            </div>
+            <div class="image-container">
+                <img src="imagenes/imagen8.jpg" alt="Chanclas" />
+                <h2>Chanclas de Marca</h2>
+                <p>Precio: $15.00</p>
+                <button class="add-to-cart" data-name="Chanclas de Marca" data-price="15">Añadir al carrito</button>
+            </div>
+        </section>
+    </main>
+    <section class="cart">
+        <h2>Carrito de Compras</h2>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="total-price">0.00</span></p>
+        <!-- Botón para vaciar el carrito -->
+        <button id="clear-cart">Vaciar carrito</button>
+    </section>
+    <div class="container">
+        <button id="buyButton" class="buy-btn">Comprar</button>
+        <div id="paymentForm" class="payment-form" style="display:none;">
+            <h2>Datos de la tarjeta</h2>
+            <form id="cardForm">
+                <label for="cardNumber">Número de tarjeta:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required><br><br>
+    
+                <label for="expDate">Fecha de expiración:</label>
+                <input type="text" id="expDate" name="expDate" placeholder="MM/AA" required><br><br>
+    
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required><br><br>
+    
+                <button type="submit" class="submit-btn">Realizar compra</button>
+            </form>
+        </div>
+    </div> 
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="link">
+                <h3>Contactanos</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/cristian_lobo30/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </footer>
+    <footer class="footer"></footer>
+    <div class="footer-content container">
+        <div class="link">
+            <ul>
+                <li><a href="https://www.facebook.com/cristian.lobi.7?locale=es_LA">Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+</footer> 
+<script src="script.js"></script>
+</body>
+</html>
